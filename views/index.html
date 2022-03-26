@@ -33,19 +33,7 @@
 
                   <label for="allcameraman" class="dropdown-item">
                     <input type="checkbox" id="selectedcamera" value="all" name="selectedcamera"/>&nbsp;All</label>
-                <div id="cameraman">
-
-                    <label for="kamalesh" class="dropdown-item">
-                      <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
-                      <label for="kamalesh" class="dropdown-item">
-                        <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
-                        <label for="kamalesh" class="dropdown-item">
-                          <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
-                  <label for="kamalesh" class="dropdown-item">
-                    <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
-                    <label for="kamalesh" class="dropdown-item">
-                      <input type="checkbox" id="selectedcamera" name="selectcamera"/>&nbsp;kamalesh</label>
-                    </div>
+                <div id="cameraman"></div>
                       <div class="dropdown-divider"></div>
                     <button class="btn btn-primary text-center ml-3" type="submit">Select pics</button>
                   </form>
@@ -72,15 +60,15 @@
                 <form id="cameraman_Datas">
                     <div class="form-group">
                         <label for="Photographer">Photographer Name</label>
-                        <input type="text" class="form-control" id="Photographer"  name="Photographer"  placeholder="Enter Your Name">
+                        <input type="text" class="form-control" id="Photographer"  name="Photographer" required  placeholder="Enter Your Name">
                     </div>
                     <div class="form-group">
                         <label for="aboutphoto">About Photo</label>
-                        <textarea type="text" class="form-control" id="aboutphoto"  name="aboutphoto" cols="2" rows="3"  placeholder="Enter Your Toughts"></textarea>
+                        <textarea type="text" class="form-control" id="aboutphoto"  name="aboutphoto" cols="2" rows="3"  required placeholder="Enter Your Toughts"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="photoupload">Picture Upload</label>
-                        <input type="file" class="form-control-file" accept="image/png,image/jpeg" name="photoupload[]" id="photoupload" multiple>
+                        <input type="file" class="form-control-file" accept="image/png,image/jpeg" name="photoupload[]" required id="photoupload" multiple>
                     </div>
                 </div>
                 <div class="modal-footer">
