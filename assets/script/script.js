@@ -17,10 +17,6 @@ getalldatas()
 
 document.querySelector('#cameraman_Datas').addEventListener('submit',function(e){
     e.preventDefault();
-    let Photographer= document.querySelector("#Photographer").value;
-    let aboutphoto= document.querySelector("#aboutphoto").value;
-    let photoupload= document.querySelector("#photoupload").value;
-    console.log(Photographer,aboutphoto,photoupload);
     let data = new FormData(this);
     fetch('../server/events/events.php',{method:"POST",body:data})
 .then(function(response) {
