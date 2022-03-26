@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm bg-light pr-5">
+        <ul class="navbar-nav d-flex flex-row" style="cursor: pointer">
+          <li class="nav-item dropdown ml-5">
+            <span class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sorting
+            </span>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span class="dropdown-item" onclick="sorting('namesort')">Name</span>
+              <span class="dropdown-item" onclick="sorting('newimages')">New Images</span>
+              <span class="dropdown-item" onclick="sorting('oldimages')">Old Images</span>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter
+            </span>
+            <div class="dropdown-menu" id="usernames" aria-labelledby="navbarDropdown mr-5">
+              <form id="cameramans" >
+
+                  <label for="allcameraman" class="dropdown-item">
+                    <input type="checkbox" id="selectedcamera" value="all" name="selectedcamera"/>&nbsp;All</label>
+                <div id="cameraman">
+
+                    <label for="kamalesh" class="dropdown-item">
+                      <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
+                      <label for="kamalesh" class="dropdown-item">
+                        <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
+                        <label for="kamalesh" class="dropdown-item">
+                          <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
+                  <label for="kamalesh" class="dropdown-item">
+                    <input type="checkbox" id="selectedcamera" value="kamalesh" name="selectcamera"/>&nbsp;kamalesh</label>
+                    <label for="kamalesh" class="dropdown-item">
+                      <input type="checkbox" id="selectedcamera" name="selectcamera"/>&nbsp;kamalesh</label>
+                    </div>
+                      <div class="dropdown-divider"></div>
+                    <button class="btn btn-primary text-center ml-3" type="submit">Select pics</button>
+                  </form>
+            </div>
+          </li>
+          &nbsp;&nbsp;
+          <li style="opacity: 0" class="nav-item dropdown"></li>
+        </ul>
+      </nav>
+      <button type="button" class="btn createingImage" data-toggle="modal" data-target="#exampleModalCenter">
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Photo Gallery</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form id="cameraman_Datas">
+                    <div class="form-group">
+                        <label for="Photographer">Photographer Name</label>
+                        <input type="text" class="form-control" id="Photographer"  name="Photographer"  placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="aboutphoto">About Photo</label>
+                        <textarea type="text" class="form-control" id="aboutphoto"  name="aboutphoto" cols="2" rows="3"  placeholder="Enter Your Toughts"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="photoupload">Picture Upload</label>
+                        <input type="file" class="form-control-file" accept="image/png,image/jpeg" name="photoupload[]" id="photoupload" multiple>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" name="uploading" value="upload">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+<div class="container-fluid mt-2">
+    <div class="row" id="renderedcomponent">
+         <!-- <div class="card col-sm-2  col-sm-2" style="background-image: url('../assets/images/users/banner.jpeg');">
+           <div class="section-card">
+               <div class="left">
+                   <div class="description">&nbsp;hai hello there...</div>
+                   <div class="date">&nbsp;12/10/202</div>
+               </div>
+               <div class="right">
+                   <div></div>
+                   <div id="cameraman">-bykamalesh &nbsp;</div>
+               </div>
+           </div>
+           <span id="heart2">&#x1F90D;</i></span>
+           <span id="heart1" style="display: none;">&#x1F497;</i></span>
+        </div> -->
+    </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../assets/script/script.js"></script>
+  </body>
+</html>
